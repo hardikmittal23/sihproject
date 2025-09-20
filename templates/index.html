@@ -2,65 +2,251 @@
 {%load static%}
 {%block title%} SIH CodeXcelerators{%endblock%}
 {% block content %}
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-container">
-            <!-- Left Content -->
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Smart Tourist Safety,<br>
-                    <span class="title-highlight">Anytime, Anywhere.</span>
-                </h1>
-                
-                <p class="hero-description">
-                    An AI, Blockchain & IoT powered solution for real-time tourist protection.
-                </p>
-                
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">Download App</button>
-                    <button class="btn btn-outline">See How It Works</button>
-                </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Smart Tourist Safety,<br>
+                <span class="title-highlight">Anytime, Anywhere.</span>
+            </h1>
+
+            <p class="hero-description">
+                An AI, Blockchain powered solution for real-time tourist protection.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Download App</button>
+                <button class="btn btn-outline">See How It Works</button>
             </div>
-            
-            <!-- Right Content - Smart ID Card -->
-            <div class="hero-visual">
-                <div class="smart-id-card">
-                    <!-- Animated background glow -->
-                    <div class="card-glow"></div>
-                    
-                    <!-- Main card -->
-                    <div class="card-main">
-                        <div class="card-content">
-                            <!-- Profile section -->
-                            <div class="card-header">
-                                <div class="profile-icon">
-                                    <div class="icon-circle">
-                                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                
-                                <div class="qr-code">
-                                    <div class="qr-container">
-                                        <!-- QR Code Pattern -->
-                                        <div class="qr-pattern" id="qrPattern"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Smart ID text -->
-                            <div class="card-title">
-                                <h3>SMART ID</h3>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+
+        <!-- Right Content - Smart ID Card -->
+        <div class="hero-visual">
+            <div class="smart-id-card">
+
+                <div class="card-header">
+                    <img src="{% static 'images/hero-illustration 1.svg' %}" alt="Hero Illustration">
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<div class="second">
+    <h2>The Challenge for Today's Travelers</h2>
+    <p>"Every year, thousands of tourists face emergencies due to a lack of quick help, missing <br> companions, or lost
+        identification. Our system solves these problems with cutting-edge <br> technology."</p>
+    <div class="sen">
+        <div class="s1">
+            <img src="{% static 'images/lost-id.svg'%}" alt="s1">
+            <p>Lost ID</p>
+        </div>
+        <div class="s1">
+            <img src="{% static 'images/no-network.svg'%}" alt="">
+            <p>No Network</p>
+        </div>
+        <div class="s1">
+            <img src="{% static 'images/health-emergency.svg'%}" alt="">
+            <p>Medical Emergency</p>
+        </div>
+    </div>
+</div>
+<div class="third">
+    <h3>Key Features</h3>
+</div>
+<div class="forth">
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Secure Digital ID (Blockchain & QR Enabled)</h4>
+        <p>Tamper-proof, verifiable ID for quick and secure identification.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Group Safety Alerts</h4>
+        <p>Automatically notify your group if someone goes missing or separates from the group.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Smartwatch Integration</h4>
+        <p>Track vitals and live location for constant well-being checks.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>AI Image Verification</h4>
+        <p>AI confirms incident photos for credibility before escalating to authorities.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Voice-Activated SOS</h4>
+        <p>Trigger an SOS alert hands-free with a simple voice command.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Offline Mode</h4>
+        <p>Cached maps, emergency tips, and smart routing work even without an internet connection.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Battery Guard</h4>
+        <p>Sends automated alerts to your contacts if your phone battery drops to a critical level.</p>
+    </div>
+    <div class="sen1">
+        <div class="circle">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+        </div>
+        <h4>Trip Digital Safe</h4>
+        <p>Store essential documents like passports and bookings securely in the cloud.</p>
+    </div>
+</div>
+<div class="third">
+    <h3>How It Works</h3>
+</div>
+<div class="fifth">
+    <div class="left">
+        <div class="bl">
+            <p>Register With Digital Id</p>
+        </div>
+        <h3>step2</h3>
+        <h2>Activate Safety Mode</h2>
+        <p style="margin-left: 15%;">The tourist activates group travel or solo safety mode, sharing their location with designated contacts.</p>
+        <div class="bl">
+            <p>Register With Digital Id</p>
+        </div>
+    </div>
+    <div class="right">
+        <h3>step1</h3>
+        <h2>Register with Digital ID</h2>
+        <p>Tourist registers on the app, and a unique, secure Digital ID with a QR code is generated.</p>
+        <div class="bl">
+            <p>Activate Safety Mode</p>
+        </div>
+        <h3>step3</h3>
+        <h2>Emergency Alert</h2>
+        <p>In an emergency, an alert is triggered. The AI validates the report, and the alert is transmitted to
+            authorities and family.</p>
+    </div>
+</div>
+<div class="third">
+    <h3>Who Benefits?</h3>
+</div>
+<div class="sixth">
+    <div class="con">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <h2>For Tourists</h2>
+        <p>Enjoy peace of mind, quick access to help, and offline navigation to explore freely.</p>
+    </div>
+    <div class="con">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <h2>For Families</h2>
+        <p>Receive real-time updates and emergency alerts, knowing your loved ones are safe.</p>
+    </div>
+    <div class="con">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <h2>For Authorities</h2>
+        <p>Get faster verification of incidents and reduce emergency response time significantly.</p>
+    </div>
+    <div class="con">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <h2>For Tourism Industry</h2>
+        <p>Build trust and establish destinations as safe and secure for all travelers.</p>
+    </div>
+</div>
+<div class="third2">
+    <h3>Our Projected Impact</h3>
+</div>
+<div class="seventh">
+    <h1>90%</h1>
+    <p>Reduction in missing tourist incidents</p>
+    <h1>2x</h1>
+    <p>Faster emergency response</p>
+</div>
+<div class="third">
+    <h3>What Our Users Say</h3>
+</div>
+<div class="eighth">
+    <div class="le">
+        <p>"Even without network, my SOS reached the nearest help center. This app is a lifesaver for adventurers!"</p>
+        <h5>- Jane Doe, Trekker</h5>
+    </div>
+    <div class="re">
+        <p>"We knew exactly where our daughter was during her trip, and that gave us complete peace of mind. Highly
+            recommend!"</p>
+        <h5>- The Smith Family</h5>
+    </div>
+</div>
+<div class="third">
+    <h3 style="margin-top: 50px;">Meet the Team</h3>
+</div>
+<div class="ninth">
+    <div class="team-member">
+        <img src="{% static 'images/avatar1.svg'%}" alt="Team Member 1">
+        <h4>Harshit Gautam</h4>
+        <p>Team Leader & Frontend Developer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar2.svg'%}" alt="Team Member 2">
+        <h4>Hardik Mittal</h4>
+        <p>Backend Developer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar2.svg'%}" alt="Team Member 3">
+        <h4>Naisha Gulati</h4>
+        <p>UI/UX Designer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar3.svg'%}" alt="Team Member 4">
+        <h4>Yogane</h4>
+        <p>Member</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar3.svg'%}" alt="Team Member 4">
+        <h4>Nayan Sharma</h4>
+        <p>Member</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar3.svg'%}" alt="Team Member 4">
+        <h4>Kartik Sharma</h4>
+        <p>Member</p>
+    </div>
+</div>
+<div class="tenth">
+    <h1>Frequently Asked Questions</h1>
+    <h3>How does the Digital ID work?</h3>
+    <p>Your Digital ID is securely generated and stored using blockchain technology, making it tamper-proof and easily
+        verifiable by authorities.</p>
+    <h3>Can I use the app offline?</h3>
+    <p>Yes! Offline mode provides cached maps, emergency tips, and smart routing even without an internet connection.
+    </p>
+    <h3>What happens in an emergency?</h3>
+    <p>The app triggers an alert, validates the report using AI, and notifies both authorities and your emergency
+        contacts instantly.</p>
+    <h3>Is my data safe?</h3>
+    <p>We use end-to-end encryption and strict privacy policies to ensure your data is always protected.</p>
+</div>
+<div class="ele">
+    <h2>Don't just travel, travel safe.</h2>
+</div>
+<div class="ele1">
+    <button>Download App</button>
+    <button>Join as Authority</button>
+</div>
 {% endblock %}
-
-{%block script%}
-
-{%endblock%}
