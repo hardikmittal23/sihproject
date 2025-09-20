@@ -1,32 +1,36 @@
 {% load static%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} | Smart Tourism Safety Platform</title>
-    <meta name="description" content="AI, Blockchain powered solution for real-time tourist protection. Experience smart tourist safety anytime, anywhere with CodeXcelerators.">
+    <meta name="description"
+        content="AI, Blockchain powered solution for real-time tourist protection. Experience smart tourist safety anytime, anywhere with CodeXcelerators.">
     <meta name="author" content="CodeXcelerators">
     <meta name="keywords" content="tourist safety, AI, blockchain, smart ID, travel security, real-time protection">
-    
+
     <meta property="og:title" content="CodeXcelerators - Smart Tourist Safety Platform">
-    <meta property="og:description" content="AI, Blockchain powered solution for real-time tourist protection. Experience smart tourist safety anytime, anywhere.">
+    <meta property="og:description"
+        content="AI, Blockchain powered solution for real-time tourist protection. Experience smart tourist safety anytime, anywhere.">
     <meta property="og:type" content="website">
-    
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
     <nav class="navigation">
         <div class="nav-container">
             <!-- Logo -->
             <div class="logo">
-                <h1>CodeXcelerators</h1>
+                <h1><a href="{% url 'home' %}">CodeXcelerators</a></h1>
             </div>
-            
+
             <!-- Navigation Links -->
             <div class="nav-links" id="navLinks">
-                <a href="#about-us">About Us</a>
-                <a href="#innovation">Innovation</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="#">Innovation</a>
                 <a href="#solution">Solution</a>
                 <a href="#technical-approach">Technical Approach</a>
                 <a href="#impact-benefits">Impact & Benefits</a>
@@ -34,15 +38,27 @@
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
                 </svg>
             </button>
         </div>
     </nav>
     {% block content %}{% endblock %}
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <p>© 2025 SIH CodeXcelerators. All rights reserved.</p>
+            <!-- <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div> -->
+        </div>
+    </footer>
     {% block script %}
     <script src="{% static 'js/script.js' %}"></script>
     {% endblock %}
 </body>
+
 </html>

@@ -1,4 +1,51 @@
 {% extends "main.html" %}
 {% load static %}
 {% block title %} About Us {% endblock %}
-{% block content %}{% endblock %}
+{% block content %}
+<section class="about-section">
+    <div class="about-container">
+        <h1>About Us</h1>
+        <p><span>Team:</span>CodeXcelerators</p>
+        <p><span>Hackathon:</span>Smart India Hackathon 2025</p>
+        <p><span>Problem Statement ID:</span>25002</p>
+        <p><span>Theme:</span>Travel & Tourism</p>
+        <p style="margin-bottom: 100px;"><span>Category:</span>Software</p>
+
+        <p>We are a passionate team of developers, designers, and innovators dedicated to making travel safer and smarter for everyone. Our project, the Smart Tourist Safety Monitoring & Incident Response System, leverages cutting-edge technologies like AI, Geo-Fencing, and Blockchain to protect tourists and empower authorities.Our mission is to create a secure, connected, and convenient travel experience for all, reducing risks and promoting safe tourism across India and beyond.</p>
+    </div>
+</section>
+
+<div class="ninth">
+    <div class="team-member">
+        <img src="{% static 'images/avatar1.svg'%}" alt="Team Member 1">
+        <h4>Harshit Gautam</h4>
+        <p>Team Leader & Frontend Developer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar2.svg'%}" alt="Team Member 2">
+        <h4>Hardik Mittal</h4>
+        <p>Backend Developer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar2.svg'%}" alt="Team Member 3">
+        <h4>Naisha Gulati</h4>
+        <p>UI/UX Designer</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar3.svg'%}" alt="Team Member 4">
+        <h4>Yogane</h4>
+        <p>Member</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar3.svg'%}" alt="Team Member 4">
+        <h4>Nayan Sharma</h4>
+        <p>Member</p>
+    </div>
+    <div class="team-member">
+        <img src="{% static 'images/avatar3.svg'%}" alt="Team Member 4">
+        <h4>Kartik Sharma</h4>
+        <p>Member</p>
+    </div>
+</div>
+{% endblock %}
+
