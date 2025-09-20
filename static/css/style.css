@@ -286,7 +286,90 @@ body {
     letter-spacing: 0.2em;
     text-align: center;
 }
+.second{
+    height: 650px;
+    background-color: #abcaf7;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.second h2{
+    font-size: 2.25rem;
+    color:darkblue;
+}
+.second p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.125rem;
+}
 
+.sen{
+    margin-top: 20px;
+    display: flex;
+}
+.s1{
+    background-color: #f1f5f9;
+    flex: 1;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 180px;
+    width: 350px;
+    margin-left: 100px;
+}
+.s1 img{
+    padding-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+.third{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.third h3{
+    font-size: 2.25rem;
+    color:darkblue;
+    margin-bottom: 30px;
+}
+.forth{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.circle{
+    background-color: rgb(49, 49, 255);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.circle i{
+    color: white;
+    font-size: 30px;
+}
+.sen1{
+    background-color: rgb(4, 4, 47);
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    color: white;
+    justify-content: center;
+}
 /* Animations */
 @keyframes fadeInUp {
     from {
